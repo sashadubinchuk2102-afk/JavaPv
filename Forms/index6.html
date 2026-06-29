@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style6.css">
+    <title>Forms Tasks</title>
+</head>
+<body>
+
+    <div class="task">
+        <h2>Task 1: Login Form</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="loginName">Your login:</label>
+                <input id="loginName" name="loginName" type="text" required>
+            </div>
+            <div class="input-group">
+                <label for="loginPassword">Your password:</label>
+                <input id="loginPassword" name="loginPassword" type="password" required>
+            </div>
+            <div class="input-group checkbox-group">
+                <input id="rememberMe" name="rememberMe" type="checkbox">
+                <label for="rememberMe">Remember me</label>
+            </div>
+            <button type="submit">Sign In</button>
+            <p><a href="#">Forgot password?</a></p>
+            <div id="loginResult" class="result"></div>
+        </form>
+    </div>
+
+    <div class="task">
+        <h2>Task 2: Register Form</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="registerEmail">Your email:</label>
+                <input id="registerEmail" name="registerEmail" type="email" required>
+            </div>
+            <div class="input-group">
+                <label for="registerLogin">Your login:</label>
+                <input id="registerLogin" name="registerLogin" type="text" required>
+            </div>
+            <div class="input-group">
+                <label for="registerPassword">Your password:</label>
+                <input id="registerPassword" name="registerPassword" type="password" required>
+            </div>
+            <div class="input-group">
+                <label for="registerRepeatPassword">Repeat password:</label>
+                <input id="registerRepeatPassword" name="registerRepeatPassword" type="password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+            <div id="registerResult" class="result"></div>
+        </form>
+    </div>
+
+    <div class="task">
+        <h2>Task 3: User Info Form</h2>
+        <form id="userInfoForm">
+            <div class="input-group">
+                <label for="firstName">Firstname:</label>
+                <input id="firstName" name="firstName" type="text" required>
+            </div>
+            <div class="input-group">
+                <label for="lastName">Lastname:</label>
+                <input id="lastName" name="lastName" type="text" required>
+            </div>
+            <div class="input-group">
+                <label for="birthday">Birthday:</label>
+                <input id="birthday" name="birthday" type="date" required>
+            </div>
+            <div class="input-group">
+                <label>Gender:</label>
+                <div>
+                    <input value="Male" id="genderMale" name="gender" type="radio" checked>
+                    <label for="genderMale">Male</label>
+                    <input value="Female" id="genderFemale" name="gender" type="radio">
+                    <label for="genderFemale">Female</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Germany">Germany</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="city">City:</label>
+                <input id="city" name="city" type="text" required>
+            </div>
+            <div class="input-group">
+                <label>Skills:</label>
+                <div>
+                    <input id="skillHtml" name="skills" type="checkbox" value="HTML">
+                    <label for="skillHtml">HTML</label>
+                    <input id="skillCss" name="skills" type="checkbox" value="CSS">
+                    <label for="skillCss">CSS</label>
+                    <input id="skillJs" name="skills" type="checkbox" value="JS">
+                    <label for="skillJs">JS</label>
+                    <input id="skillPhp" name="skills" type="checkbox" value="PHP">
+                    <label for="skillPhp">PHP</label>
+                    <input id="skillCpp" name="skills" type="checkbox" value="C++">
+                    <label for="skillCpp">C++</label>
+                    <input id="skillJava" name="skills" type="checkbox" value="JAVA">
+                    <label for="skillJava">JAVA</label>
+                    <input id="skillCsharp" name="skills" type="checkbox" value="C#">
+                    <label for="skillCsharp">C#</label>
+                </div>
+            </div>
+            <button type="submit">Save</button>
+            <div id="userInfoResult" class="result"></div>
+        </form>
+    </div>
+
+    <div class="task">
+        <h2>Task 4: Color Palette</h2>
+        <form id="colorForm">
+            <div class="input-group color-inputs">
+                <label for="colorR">R</label>
+                <input id="colorR" name="colorR" type="range" min="0" max="255" value="255">
+                <span id="colorRValue">255</span>
+                <label for="colorG">G</label>
+                <input id="colorG" name="colorG" type="range" min="0" max="255" value="99">
+                <span id="colorGValue">99</span>
+                <label for="colorB">B</label>
+                <input id="colorB" name="colorB" type="range" min="0" max="255" value="71">
+                <span id="colorBValue">71</span>
+            </div>
+            <button type="submit">Add color</button>
+            <div id="colorPalette" class="palette"></div>
+        </form>
+    </div>
+
+    <script src="base6.js"></script>
+</body>
+</html>
