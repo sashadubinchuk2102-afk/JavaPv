@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <title>Events Tasks</title>
+</head>
+<body>
+
+    <div class="task">
+        <h2>Task 1: Modal Window</h2>
+        <button id="openModalBtn">Open Modal</button>
+
+        <div id="modalOverlay" class="modal-overlay">
+            <div class="modal-box">
+                <h2>Hello from Modal Window!</h2>
+                <button id="closeModalBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Task 2: Traffic Light</h2>
+        <div id="trafficLight">
+            <div class="light red" id="redLight"></div>
+            <div class="light yellow" id="yellowLight"></div>
+            <div class="light green" id="greenLight"></div>
+        </div>
+        <button id="nextLightBtn">Next</button>
+    </div>
+
+    <div class="task">
+        <h2>Task 3: Progress Bar</h2>
+        <div id="progressContainer">
+            <div id="progressBar" style="width: 0%;"></div>
+        </div>
+        <div id="progressText">0%</div>
+        <button id="addProgressBtn">Add 5 percent</button>
+    </div>
+
+    <script src="base5.js"></script>
+</body>
+</html>
